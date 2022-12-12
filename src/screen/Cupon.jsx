@@ -19,7 +19,7 @@ const Cupon = () => {
   const handleGetPromo = () => {
     axios
       .get(
-        `https://bujank-coffee2022.vercel.app/coffee/promo/?product_id=${product.id_product}`,
+        `https://backend-coffee2022.vercel.app/coffee/promo/?product_id=${product.id_product}`,
       )
       .then(res => setPromo(res.data.result))
       .catch(err => console.log(err));

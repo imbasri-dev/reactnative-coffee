@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const getURL = `https://bujank-coffee2022.vercel.app/coffee`;
+const getURL = `https://backend-coffee2022.vercel.app/coffee`;
 
 // Axios register
 export const Register = body => {
@@ -24,7 +24,7 @@ export const LoginUser = body => {
 // Axios getHistory
 export const getHistory = token => {
   return axios.get(
-    `https://bujank-coffee2022.vercel.app/coffee/transactions/history?page=1&limit=10`,
+    `https://backend-coffee2022.vercel.app/coffee/transactions/history?page=1&limit=10`,
     {
       headers: {
         'x-access-token': token,
@@ -54,7 +54,7 @@ export const transactions = (token, body) => {
 // Axios getHistory All
 export const getHistoryAll = token => {
   return axios.get(
-    `https://bujank-coffee2022.vercel.app/coffee/transactions/history`,
+    `https://backend-coffee2022.vercel.app/coffee/transactions/history`,
     {
       headers: {
         'x-access-token': token,
@@ -66,7 +66,7 @@ export const getHistoryAll = token => {
 // Axios Delete historyid
 export const deleteHistoryId = (token, id) => {
   return axios.delete(
-    `https://bujank-coffee2022.vercel.app/coffee/transactions/${id}`,
+    `https://backend-coffee2022.vercel.app/coffee/transactions/${id}`,
     {
       headers: {
         'x-access-token': token,
@@ -78,7 +78,7 @@ export const deleteHistoryId = (token, id) => {
 // Axios reset password
 export const Resetpassword = (token, body) => {
   return axios.patch(
-    `https://bujank-coffee2022.vercel.app/coffee/users/editPasswords`,
+    `https://backend-coffee2022.vercel.app/coffee/users/editPasswords`,
     body,
     {
       headers: {

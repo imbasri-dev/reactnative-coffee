@@ -14,7 +14,7 @@ const ProductDetail = ({navigation, route}) => {
 
   const getProductByid = () => {
     axios
-      .get(`https://bujank-coffee2022.vercel.app/coffee/product/${id_product}`)
+      .get(`https://backend-coffee2022.vercel.app/coffee/product/${id_product}`)
       .then(res => {
         setProduct(res.data.result.data[0]);
         // console.log(res.data.result.data[0])

@@ -18,7 +18,7 @@ function See_All({route}) {
   useEffect(() => {
     axios
       .get(
-        `https://bujank-coffee2022.vercel.app/coffee/product?category=${category}&sorting=${sort}`,
+        `https://backend-coffee2022.vercel.app/coffee/product?category=${category}&sorting=${sort}`,
       )
       .then(res => {
         setProduct(res.data.result.data), console.log('data ke get');

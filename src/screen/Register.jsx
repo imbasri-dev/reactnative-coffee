@@ -28,7 +28,7 @@ const Register = ({navigation}) => {
 
   const handleRegister = () => {
     return axios
-      .post(`https://bujank-coffee2022.vercel.app/coffee/users`, {
+      .post(`https://backend-coffee2022.vercel.app/coffee/users`, {
         email: email,
         passwords: password,
         phone_number: phone,
